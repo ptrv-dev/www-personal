@@ -61,6 +61,9 @@ a {
     &_light {
         background: #fdf0e9;
     }
+    &_dark {
+        background: $dark-blue;
+    }
     &__suptitle {
         font-weight: 400;
         font-size: 16px;
@@ -75,17 +78,24 @@ a {
         font-size: 56px;
         line-height: 64px;
         letter-spacing: -1px;
-        color: $white;
+        &_light {
+            color: $white;
+        }
         &_dark {
             color: $dark;
         }
     }
     &__header {
-        &_row {
+        margin-bottom: 64px;
+        &_center {
             max-width: 37%;
             margin: 0 auto;
             text-align: center;
-            margin-bottom: 64px;
+        }
+        &_row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
         }
     }
     &__text {
