@@ -10,6 +10,13 @@ block svg
   //-       path
 
 block body
-  .container
-    h1 Home page
-    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, consequatur error? Dolor animi iusto molestias autem nam commodi fugiat repellat.
+  main 
+    section.hero 
+      .container.hero__container 
+        .hero__info 
+          h5.hero__suptitle.section__suptitle Gabriel Pires
+          h1.hero__title.section__title The Simple, Clean Design
+          p.hero__text.section__text.section__text_light Agency provides a full service range including technical skills, design, business understanding.
+          a.hero__button.button.button_accent(href="#") See My Work
+        img.hero__img(src="./img/hero/hero.png", alt="")
+        
