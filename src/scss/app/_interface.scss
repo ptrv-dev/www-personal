@@ -51,10 +51,16 @@ a {
     &-o {
         padding: 17px 35px;
         border: 1px solid rgba(255, 255, 255, 0.3);
+        background: none;
     }
 }
 
 .section {
+    background: $dark-blue;
+    padding: 100px 0;
+    &_light {
+        background: #fdf0e9;
+    }
     &__suptitle {
         font-weight: 400;
         font-size: 16px;
@@ -62,6 +68,7 @@ a {
         letter-spacing: 3px;
         text-transform: uppercase;
         color: $accent;
+        margin-bottom: 20px;
     }
     &__title {
         font-weight: 800;
@@ -73,4 +80,32 @@ a {
             color: $dark;
         }
     }
+    &__header {
+        &_row {
+            max-width: 37%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 64px;
+        }
+    }
+    &__text {
+        line-height: 32px;
+        &_light {
+            color: $light-gray;
+        }
+        &_dark {
+            color: $dark-gray;
+        }
+    }
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: $dark;
+}
+
+img {
+    pointer-events: none;
 }
