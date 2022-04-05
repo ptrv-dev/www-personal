@@ -1,0 +1,67 @@
+.faq {
+    &__text {
+        margin-bottom: 28px;
+    }
+}
+.faq-tabs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #3a3c56;
+
+    &__item {
+        border-bottom: 1px solid #3a3c56;
+        &:last-child {
+            border-bottom: none;
+        }
+        &_active {
+            .faq-tabs__title {
+                color: $dark;
+            }
+            background: $white;
+            .faq-tabs__text {
+                padding-bottom: 50px;
+                max-height: 500px;
+                visibility: visible;
+            }
+            .faq-tabs__button {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__title {
+        color: $white;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 34px 40px 48px;
+    }
+    &__button {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $accent;
+        svg {
+            width: 12px;
+            height: 8px;
+            fill: $white;
+            transition: transform .3s ease-out;
+        }
+    }
+    &__text {
+        padding: 0 50px 0px 50px;
+        max-height: 0px;
+        color: rgba(57, 20, 0, 0.64);
+        line-height: 32px;
+        transition: max-height 1s ease-in-out;
+        visibility: hidden;
+    }
+}
+.partners-row {
+    margin-top: 100px;
+}
