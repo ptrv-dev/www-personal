@@ -53,6 +53,11 @@ a {
         border: 1px solid rgba(255, 255, 255, 0.3);
         background: none;
     }
+    &_light {
+        color: $dark;
+        background: $white;
+        box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+    }
 }
 
 .section {
@@ -85,6 +90,14 @@ a {
             color: $dark;
         }
     }
+    &__subtitle {
+        font-size: 20px;
+        line-height: 32px;
+        color: $white;
+        &_dark {
+            color: $dark;
+        }
+    }
     &__header {
         margin-bottom: 64px;
         &_center {
@@ -97,6 +110,9 @@ a {
             justify-content: space-between;
             align-items: flex-end;
         }
+        &_column {
+            margin-bottom: 28px;
+        }
     }
     &__text {
         line-height: 32px;
@@ -107,6 +123,15 @@ a {
             color: $dark-gray;
         }
     }
+    &__column {
+        flex-basis: 40%;
+    }
+}
+
+.flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h4 {
@@ -118,4 +143,11 @@ h4 {
 
 img {
     pointer-events: none;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: $dark;
 }

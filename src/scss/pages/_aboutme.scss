@@ -1,0 +1,40 @@
+.aboutme {
+    &__subtitle {
+        margin-bottom: 18px;
+    }
+    &__text {
+        margin-bottom: calc(34px + 17px);
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+        margin-top: 174px;
+    }
+}
+.aboutme-item {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    padding: 32px 48px;
+    border-right: 1px solid #f3d1bf;
+    &:last-child {
+        border-right: none;
+    }
+    &__icon {
+        border-radius: 50%;
+        background: #ef6c57;
+        width: 112px;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            max-width: 48px;
+            max-height: 48px;
+            fill: $white;
+        }
+        margin-right: 40px;
+    }
+}
