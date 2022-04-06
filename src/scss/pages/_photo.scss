@@ -1,0 +1,14 @@
+.photo {
+    padding: 0;
+    background: #fdf0e9;
+    &__container {
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+    }
+}
