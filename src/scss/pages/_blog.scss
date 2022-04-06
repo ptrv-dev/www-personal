@@ -1,0 +1,96 @@
+.blog {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__main {
+        width: 66%;
+        .blog-item {
+            margin: 0;
+        }
+    }
+    &__column {
+        width: 23%;
+        .blog-item__suptitle {
+            margin-bottom: 15px;
+        }
+    }
+    &__hr {
+        border: 1px solid #f3d1bf;
+        padding: 0;
+        margin: 60px 0;
+    }
+}
+.blog-item {
+    width: 100%;
+    &__image {
+        width: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        img {
+            width: 100%;
+            display: block;
+            transition: transform .3s ease-in-out;
+
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(#5c2000, 0.32);
+            transition: opacity .3s ease-in-out;
+        }
+        &:hover {
+            img {
+                transform: scale(105%);
+            }
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+    &__suptitle {
+        margin-top: 26px;
+        margin-bottom: 31px;
+    }
+    &__title {
+        max-width: 85%;
+        margin-bottom: 12px;
+    }
+    margin-bottom: 36px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.subscribe {
+    &__col {
+        &_small {
+            flex-basis: 35%;
+        }
+        &_row {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__input {
+        width: 100%;
+        margin-right: 30px;
+        background: #ffffff;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(57, 20, 0, 0.64);
+        outline-color: $dark;
+    }
+}

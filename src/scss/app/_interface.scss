@@ -124,6 +124,9 @@ a {
         &_column {
             margin-bottom: 28px;
         }
+        &-col {
+            max-width: 30%;
+        }
     }
     &__text {
         line-height: 32px;
