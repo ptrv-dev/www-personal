@@ -40,12 +40,20 @@
     }
     &__input {
         margin-bottom: 16px;
+        resize: none;
+
         &_big {
             min-height: 130px;
         }
     }
     &__button {
-        align-self: end;
+        align-self: flex-end;
         margin-top: 32px;
+    }
+}
+
+.contact2 {
+    &__text {
+        margin-bottom: 50px;
     }
 }
