@@ -93,7 +93,6 @@ a {
             line-height: 48px;
             letter-spacing: normal;
         }
-        
     }
     &__link {
         text-decoration: none;
@@ -185,4 +184,15 @@ h3 {
     font-size: 40px;
     line-height: 48px;
     color: $dark;
+}
+
+.input {
+    background: #ffffff;
+    border: 1px solid #f3d1bf;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(57, 20, 0, 0.64);
+    outline-color: $dark;
 }

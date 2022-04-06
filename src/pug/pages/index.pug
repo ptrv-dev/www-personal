@@ -310,9 +310,34 @@ block body
             h4.subscribe__title Newsletter
             p.subscribe__subtitle.section__text.section__text_dark A digital agency is a business you hire to outsource
           .subscribe__col.subscribe__col_row 
-            input.subscribe__input(type="text")
+            input.subscribe__input.input(type="text" placeholder="Your email")
             a.subscribe__button.button.button_light(href="#") Subscribe
-            
+    section.section.section_dark.contact 
+      .container.flex-sb-c 
+        form.contact-form(action="") 
+          h4.contact-form__title Get In Touch
+          input.input.contact-form__input(type="text" placeholder="Your email" name="email")
+          input.input.contact-form__input(type="text" placeholder="Subject" name="subject")
+          textarea.input.contact-form__input(name="message", cols="0", rows="3" placeholder="Message")
+          a.button.button_accent.contact-form__button(href="#") Submit now
+        .section__column 
+          .section__header.section__header_column 
+            h5.section__suptitle Contact
+            h2.section__title.section__title_light Contact Me
+          p.section__text.section__text_light A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.
+          ul.contact__list 
+            li.contact__item 
+              .contact__item-icon 
+                img(src="./img/icons/compass-icon.svg", alt="")
+              |2247 Lunetta Street, TX 76301
+            li.contact__item 
+              .contact__item-icon 
+                img(src="./img/icons/phone-icon.svg", alt="")
+              |+1 (234) 567-89-00
+            li.contact__item 
+              .contact__item-icon 
+                img(src="./img/icons/email-icon.svg", alt="")
+              |info@agency.com
 
 
 
