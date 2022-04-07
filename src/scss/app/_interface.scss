@@ -44,19 +44,34 @@ a {
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: $white;
-    background: $accent;
     border-radius: 6px;
     padding: 17px 30px;
+    transition: all .2s ease-in-out;
     &-o {
+        color: $white;
         padding: 17px 35px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         background: none;
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+            color: $dark-blue;
+        }
     }
     &_light {
         color: $dark;
         background: $white;
-        box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+        &:hover {
+            background: $dark;
+            color: $white;
+        }
+    }
+    &_accent {
+        color: $white;
+        background: $accent;
+        &:hover {
+            background: $white;
+            color: $accent;
+        }
     }
 }
 

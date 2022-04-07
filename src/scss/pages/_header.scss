@@ -30,10 +30,27 @@
         &:last-child {
             margin-right: 0;
         }
+        position: relative;
     }
     &__link {
         line-height: 32px;
         color: $white;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background: $white;
+            transition: all .1s ease-in-out;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
     }
 }
 .logo {
